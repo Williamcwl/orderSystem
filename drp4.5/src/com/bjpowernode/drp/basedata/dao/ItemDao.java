@@ -6,28 +6,28 @@ import com.bjpowernode.drp.basedata.domain.Item;
 import com.bjpowernode.drp.util.PageModel;
 
 /**
- * ÎïÁÏÊı¾İ·ÃÎÊ½Ó¿Ú
+ * ç‰©æ–™æ•°æ®è®¿é—®æ¥å£
  * @author cnwl
  *
  */   
 public interface ItemDao {
 	
 	/**
-	 * Ìí¼ÓÎïÁÏ
+	 * æ·»åŠ ç‰©æ–™
 	 * @param conn
 	 * @param item
 	 */
 	public void addItem(Connection conn , Item item);
 	
 	/**
-	 * ¸ù¾İÎïÁÏ´úÂëµÄ¼¯ºÏÉ¾³ı
+	 * æ ¹æ®ç‰©æ–™ä»£ç çš„é›†åˆåˆ é™¤
 	 * @param conn
 	 * @param itemNos
 	 */
 	public void delItem(Connection conn , String[] itemNos);
 	
 	/**
-	 * ĞŞ¸ÄÎïÁÏ
+	 * ä¿®æ”¹ç‰©æ–™
 	 * @param conn
 	 * @param item
 	 */
@@ -35,20 +35,32 @@ public interface ItemDao {
 	
 	
 	/**
-	 * ¸ù¾İÎïÁÏ´úÂë²éÑ¯
+	 * æ ¹æ®ç‰©æ–™ä»£ç æŸ¥è¯¢
 	 * @param conn
 	 * @param itemNo
 	 */
 	public Item findItemById(Connection conn ,String itemNo);
 	
 	/**
-	 * ¸ù¾İÌõ¼ş·ÖÒ³²éÑ¯
+	 * æ ¹æ®æ¡ä»¶åˆ†é¡µæŸ¥è¯¢
 	 * @param pageNo
 	 * @param pageSize
 	 * @param condition
 	 * @return
 	 */
 	public PageModel findItemList(Connection conn ,int pageNo, int pageSize,String condition);
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 	
 	
 }
